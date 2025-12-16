@@ -2,7 +2,7 @@ import { createClient } from '@/utils/supabase/server'
 import { redirect } from 'next/navigation'
 // 👇 PERBAIKAN: Import ProfileDashboard, BUKAN ProfileForm
 import ProfileDashboard from '@/components/ProfileDashboard' 
-import { signout } from '@/app/auth/actions'
+import { signout } from '@/app/auth/action'
 
 export default async function Home() {
   const supabase = await createClient()
